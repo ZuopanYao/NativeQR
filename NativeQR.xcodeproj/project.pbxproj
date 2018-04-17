@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B900A4322085962000A92E85 /* mylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B900A4312085961700A92E85 /* mylogo.png */; };
+		B900A4362085A7EE00A92E85 /* QRCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900A4342085A7D100A92E85 /* QRCreator.swift */; };
+		B900A4372085A7EE00A92E85 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900A4352085A7D100A92E85 /* QRScanner.swift */; };
 		B987A2DB1F9EF24800A5ABBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2DA1F9EF24800A5ABBC /* AppDelegate.swift */; };
 		B987A2DD1F9EF24800A5ABBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2DC1F9EF24800A5ABBC /* ViewController.swift */; };
 		B987A2E01F9EF24800A5ABBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987A2DE1F9EF24800A5ABBC /* Main.storyboard */; };
 		B987A2E21F9EF24800A5ABBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B987A2E11F9EF24800A5ABBC /* Assets.xcassets */; };
 		B987A2E51F9EF24800A5ABBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987A2E31F9EF24800A5ABBC /* LaunchScreen.storyboard */; };
-		B987A2ED1F9EF2D400A5ABBC /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2EC1F9EF2D400A5ABBC /* QRScanner.swift */; };
-		B987A2EF1F9EF30000A5ABBC /* QRCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2EE1F9EF30000A5ABBC /* QRCreator.swift */; };
 		B987A2F11F9F143E00A5ABBC /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2F01F9F143E00A5ABBC /* QRScanViewController.swift */; };
 		B987A2F31F9F145100A5ABBC /* QRCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A2F21F9F145100A5ABBC /* QRCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B900A4312085961700A92E85 /* mylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mylogo.png; sourceTree = "<group>"; };
+		B900A4342085A7D100A92E85 /* QRCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCreator.swift; sourceTree = "<group>"; };
+		B900A4352085A7D100A92E85 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
 		B987A2D71F9EF24800A5ABBC /* NativeQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987A2DA1F9EF24800A5ABBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B987A2DC1F9EF24800A5ABBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +30,6 @@
 		B987A2E11F9EF24800A5ABBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B987A2E41F9EF24800A5ABBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B987A2E61F9EF24800A5ABBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B987A2EC1F9EF2D400A5ABBC /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
-		B987A2EE1F9EF30000A5ABBC /* QRCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCreator.swift; sourceTree = "<group>"; };
 		B987A2F01F9F143E00A5ABBC /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		B987A2F21F9F145100A5ABBC /* QRCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B900A4332085A7D100A92E85 /* QRTools */ = {
+			isa = PBXGroup;
+			children = (
+				B900A4342085A7D100A92E85 /* QRCreator.swift */,
+				B900A4352085A7D100A92E85 /* QRScanner.swift */,
+			);
+			path = QRTools;
+			sourceTree = "<group>";
+		};
 		B987A2CE1F9EF24800A5ABBC = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +73,10 @@
 		B987A2D91F9EF24800A5ABBC /* NativeQR */ = {
 			isa = PBXGroup;
 			children = (
+				B900A4332085A7D100A92E85 /* QRTools */,
+				B900A4312085961700A92E85 /* mylogo.png */,
 				B987A2DA1F9EF24800A5ABBC /* AppDelegate.swift */,
 				B987A2DC1F9EF24800A5ABBC /* ViewController.swift */,
-				B987A2EC1F9EF2D400A5ABBC /* QRScanner.swift */,
-				B987A2EE1F9EF30000A5ABBC /* QRCreator.swift */,
 				B987A2F01F9F143E00A5ABBC /* QRScanViewController.swift */,
 				B987A2F21F9F145100A5ABBC /* QRCreateViewController.swift */,
 				B987A2DE1F9EF24800A5ABBC /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B900A4322085962000A92E85 /* mylogo.png in Resources */,
 				B987A2E51F9EF24800A5ABBC /* LaunchScreen.storyboard in Resources */,
 				B987A2E21F9EF24800A5ABBC /* Assets.xcassets in Resources */,
 				B987A2E01F9EF24800A5ABBC /* Main.storyboard in Resources */,
@@ -148,9 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B987A2ED1F9EF2D400A5ABBC /* QRScanner.swift in Sources */,
+				B900A4362085A7EE00A92E85 /* QRCreator.swift in Sources */,
+				B900A4372085A7EE00A92E85 /* QRScanner.swift in Sources */,
 				B987A2F31F9F145100A5ABBC /* QRCreateViewController.swift in Sources */,
-				B987A2EF1F9EF30000A5ABBC /* QRCreator.swift in Sources */,
 				B987A2DD1F9EF24800A5ABBC /* ViewController.swift in Sources */,
 				B987A2F11F9F143E00A5ABBC /* QRScanViewController.swift in Sources */,
 				B987A2DB1F9EF24800A5ABBC /* AppDelegate.swift in Sources */,

@@ -19,14 +19,21 @@ class QRCreateViewController: UIViewController {
         navigationController?.title = "生成二维码"
         
         let qrModel = QRCreateModel()
-        qrModel.text = "http://m.hao123.com"
+        qrModel.text = "https://www.yaozuopan.top"
+        qrModel.contentColor = UIColor.yellow
+        qrModel.backgroundColor = UIColor.gray
+        
+        /// 二维码的容错率最大为30%(即二维码被遮挡的部分不能大于30%,否则二维码无法被识别)
+        /// e.g.
+        /// 假设二维码大小为{100,100}, logo的大小最大为{30,30}
+        /// 在设置loog请注意
+        // qrModel.logo = "mylogo"
         
         if let qrImage = QRCreator.shared.create(qrModel) {
             
             print(qrImage.size.width)
             print(qrImage.size.height)
-            
-            imageView.image = qrImage
+            // imageView.image = qrImage
         }
     }
     
